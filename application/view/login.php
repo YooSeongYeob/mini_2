@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/application/view/coinLogin.css">
+    <link rel="stylesheet" href="/application/view/css/coinLogin.css">
     <link rel="icon" href="/application/view/coinpavicon.png">
     <title>Login</title>
 </head>
 <body>
-<div class="container">
-    <h3 style="color: red;"><?PHP echo isset($this->errMsg) ? $this->errMsg : ""; ?></h3>
+<h3 style="color: red;"><?PHP echo isset($this->errMsg) ? $this->errMsg : ""; ?></h3>
     <form action="/user/login" method="post"> 
+<div class="container">
+   
+
     <div class="screen">
       <div class="screen__content">
         <form class="login">
           <div class="login__field">
             <i class="login__icon fas fa-user"></i>
-            <input type="text" class="login__input" placeholder="User name">
+            <input type="text" name="id" class="login__input" placeholder="User name">
           </div>
           <div class="login__field">
             <i class="login__icon fas fa-lock"></i>
-            <input type="password" class="login__input" placeholder="Password">
+            <input type="password" name="pw" class="login__input" placeholder="Password">
           </div>
           <button class="button login__submit">
             <span class="button__text">Log In Now</span>

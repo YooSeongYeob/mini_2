@@ -23,7 +23,7 @@ class UserController extends Controller {
    $_SESSION[_STR_LOGIN_ID] = $_POST["id"];
 
     // 리스트 레이지 리턴
-    return _BASE_REDIRECT."/Coin/main";
+    return _BASE_REDIRECT."/coin/main";
    }
 
    // 로그아웃 메소드 

@@ -15,13 +15,13 @@
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
-
+		
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">YOObit <span></span></a></h1>
+					<h1 id="logo"><a href="main.php">YOObit <span></span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">투자는 신중히 하세요</a></li>
+							<li class="current"><a href="main.php">투자는 신중히 하세요</a></li>
 							<li class="submenu">
 								<a href="#"></a>
 								<ul>
