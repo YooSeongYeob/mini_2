@@ -16,8 +16,8 @@ class Application {
         //  $arrPath = $path !== "" ? explode("/", $path) : "";    // 패스가 빈 문자열이 아니면 빈 문자열을 보내고 아니면 패스로 보낸다
         // 대부분의 객체지향은 카멜 기법, 라라벨도 카멜 기법
          $arrPath = UrlUtil::getUrlArrPath(); // 접속 URL을 배열로 획득
-         $identityName = empty($arrPath[0]) ? "User" : ucfirst($arrPath[0]);                                           
-         $action = (empty($arrPath[1]) ? "login" : $arrPath[1]).ucfirst(strtolower($_SERVER["REQUEST_METHOD"]));    // 메소드로 설정할거기 때문에 어퍼를 설정 안 함 대문자로 바꿔주지 않을거임 첫글자를
+         $identityName = empty($arrPath[0]) ? "Coin" : ucfirst($arrPath[0]);                                           
+         $action = (empty($arrPath[1]) ? "main" : $arrPath[1]).ucfirst(strtolower($_SERVER["REQUEST_METHOD"]));    // 메소드로 설정할거기 때문에 어퍼를 설정 안 함 대문자로 바꿔주지 않을거임 첫글자를
          
          // controller 명 작성
          $controllerPath = _PATH_CONTROLLER.$identityName._BASE_FILENAME_CONTROLLER._EXTENSION_PHP;
