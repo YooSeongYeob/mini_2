@@ -13,15 +13,15 @@
 		<link rel="icon" href="/application/view/assets/Favicon/coinpavicon.png">
 		<noscript><link rel="stylesheet" href="/application/view/assets/css/noscript.css" /></noscript>
 	</head>
+	<!-- <form action="/user/login" method="post">  -->
 	<body class="index is-preload">
 		<div id="page-wrapper">
-		
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="main.php">YOObit <span></span></a></h1>
+					<h1 id="logo"><a href="main">YOObit</a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="main.php">투자는 신중히 하세요</a></li>
+							<li class="current"><a href="main">투자는 신중히 하세요</a></li>
 							<li class="submenu">
 								<a href="#"></a>
 								<ul>
@@ -95,7 +95,7 @@
 							
 								<div class="col-8 col-12-narrower">
 							
-									<img src="../html5up-twenty/images/kind of binance coin .png"/>
+									<img src="/application/view/images/kind of binance coin .png"/>
 									<!-- <header>
 										<h2><strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
 									</header>
