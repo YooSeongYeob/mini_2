@@ -8,7 +8,7 @@ class UserModel extends Model {
     // 파라미터로 값을 받아올 거임 스트링, 배열 둘 중에 하나로 아이디랑 패스워드 받아와야 함
     // 배열로 받기로 함 $arrUserInfo
     public function getUser($arrUserInfo, $pwFlg = true) {      // 2번째 파라미터가 있으면 쓰고 없으면 1번째꺼를 쓰겠다라는 의미
-        $sql =" select * from user_info where u_id = :id and u_pw = :pw ";
+        $sql =" select * from user_info where u_id = :id ";
         
         // PW 추가할 경우 // 동적 쿼리의 가장 기초이고 여러 화면에서 다 사용하겠다는 의미
         if($pwFlg) {

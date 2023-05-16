@@ -27,15 +27,15 @@
         
       <form class="login">
           <div class="login__field">
-            <i class="login__icon fas fa-user"></i>
+            <i for="id" class="login__icon fas fa-user"></i>
             <input type="text" name="id" id="id" class="login__input" placeholder="User name">
           </div>
           <div class="login__field">
-            <i class="login__icon fas fa-lock"></i>
+            <i for="pw" class="login__icon fas fa-lock"></i>
             <input type="password" name="pw" id="pw" class="login__input" placeholder="Password">
           </div>
           <button class="button login__submit">
-            <span class="button__text">Log In Now</span>
+            <span class="button__text">LogIn</span>
             <i class="button__icon fas fa-chevron-right"></i>
           </button>       
         </form>

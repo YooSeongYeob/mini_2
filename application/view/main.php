@@ -17,12 +17,7 @@
 	<body class="index is-preload">
 	<div id="page-wrapper">
 			
-			<?php if(isset($this->loginFlg)) { ?>
-				<a href="/user/logout">로그아웃</a>
-			<?php } else { ?>
-			<a href="/user/login">로그인</a>
-			<a href="/user/regist">회원가입</a>
-			<?php } ?>
+			
 
 
 			<!-- Header -->
@@ -50,9 +45,13 @@
 									</li>
 								</ul>
 							</li>
-							<li><a class="button primary" href="/user/login">로그인</a></li>
-							<li><a class="button primary" href="">회원가입</a></li>
-							<li><a class="button primary" href="">ID/PW 찾기</a></li>
+							<?php if(isset($this->loginFlg)) { ?>
+								<li><a class="button primary" href="/user/logout">로그아웃</a></li>
+							<?php } else { ?>
+								<li><a class="button primary" href="/user/login">로그인</a></li>
+								<li><a class="button primary" href="/user/regist">회원가입</a></li>
+								<li><a class="button primary" href="">ID/PW 찾기</a></li>
+							<?php } ?>
 						</ul>
 					</nav>
 				</header>

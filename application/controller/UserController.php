@@ -56,10 +56,10 @@ class UserController extends Controller {
          $arrChkErr["pw"] = "PW는 8~20글자로 입력해주세요";
       }
       // PW 영문숫자특수문자 체크 (한 번 해보세요)
-
+      
 
       // 비밀번호와 비밀번호 체크 확인
-      if($arrPost["pw"] === $arrPost["pwChk"]) {
+      if($arrPost["pw"] !== $arrPost["pwChk"]) {
          $arrChkErr["pwChk"] = "비밀번호와 비밀번호 확인이 일치하지 않습니다  ";
       }
 

@@ -4,6 +4,10 @@ namespace application\controller;
 
 class CoinController extends Controller {
    public function mainGet() {
+   if(isset($_SESSION[_STR_LOGIN_ID])){
+      $this->addDynamicProperty('loginFlg', "1");
+   }
+
       return "main"._EXTENSION_PHP;
    }
 }
