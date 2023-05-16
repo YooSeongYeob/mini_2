@@ -12,17 +12,13 @@
     <h1>회원 가입</h1>
     <br>
     <br>
-
+    
     <?php if(isset($this->errMsg)) { ?>
         <div>
             <span><?php echo $this->errMsg ?></span>
         </div>
     <?php } ?>
 
- <!-- 2. 삼항연산자로 작성 -->
-    <div>
-        <span><?php echo (isset($this->errMsg) ? $this->errMsg : "") ?></span>
-    </div>
 
  <form action="/user/regist" method="POST">
     <label for="id">ID</label>

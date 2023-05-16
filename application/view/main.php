@@ -266,7 +266,7 @@
 				</footer>
 
 		</div>
-
+		
 		<!-- Scripts -->
 			<script src="/application/view/assets/js/jquery.min.js"></script>
 			<script src="/application/view/assets/js/jquery.dropotron.min.js"></script>

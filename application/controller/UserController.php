@@ -99,9 +99,7 @@ class UserController extends Controller {
       $this ->model->commit(); // 정상처리 커밋
       // ***** transaction End
 
-        
-
-         // 로그인 페이지로 이동
+      // 로그인 페이지로 이동
          return _BASE_REDIRECT."/user/login";
       }
    }
