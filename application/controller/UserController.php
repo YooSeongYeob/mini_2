@@ -56,7 +56,7 @@ class UserController extends Controller {
          $arrChkErr["pw"] = "PW는 8~20글자로 입력해주세요";
       }
       // PW 영문숫자특수문자 체크 (한 번 해보세요)
-      
+
 
       // 비밀번호와 비밀번호 체크 확인
       if($arrPost["pw"] !== $arrPost["pwChk"]) {
@@ -99,7 +99,7 @@ class UserController extends Controller {
       $this ->model->commit(); // 정상처리 커밋
       // ***** transaction End
 
-
+        
 
          // 로그인 페이지로 이동
          return _BASE_REDIRECT."/user/login";
