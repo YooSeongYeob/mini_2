@@ -6,11 +6,9 @@ use Exception;
 
 
 class Model {
-    
-    protected $conn; // 콘을 선언만 해둠
+        protected $conn; // 콘을 선언만 해둠
 
-    public function __construct() {
-        
+        public function __construct() {
         $dns = "mysql:host="._DB_HOST.";dbname="._DB_NAME.";charset="._DB_CHARSET;
         $option =
         [
@@ -26,8 +24,24 @@ class Model {
         exit();
     }
   }
+
  // DB Connect 파기
- protected function closeConn() {
+ public function close() {
     $this->conn = null;
   }
+
+   // Transaction Start (beginTransaciton)
+ public function beginTransaction() {
+    $this->conn->beginTransaction();
+  }
+
+  // commit
+ public function commit() {
+    $this->conn->commit();
+  } 
+  
+  // rollback
+  public function rollback() {
+    $this->conn->rollback();
+  } 
 }

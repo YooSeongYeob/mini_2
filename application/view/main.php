@@ -15,7 +15,16 @@
 	</head>
 	<!-- <form action="/user/login" method="post">  -->
 	<body class="index is-preload">
-		<div id="page-wrapper">
+	<div id="page-wrapper">
+			
+			<?php if(isset($this->loginFlg)) { ?>
+				<a href="/user/logout">로그아웃</a>
+			<?php } else { ?>
+			<a href="/user/login">로그인</a>
+			<a href="/user/regist">회원가입</a>
+			<?php } ?>
+
+
 			<!-- Header -->
 				<header id="header" class="alt">
 					<h1 id="logo"><a href="main">YOObit</a></h1>
