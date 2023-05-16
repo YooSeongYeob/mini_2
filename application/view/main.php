@@ -103,7 +103,7 @@
 							
 								<div class="col-8 col-12-narrower">
 							
-									<img src="/application/view/images/kind of binance coin .png"/>
+									<img class="binanceimg" src="/application/view/images/kind of binance coin .png"/>
 									<!-- <header>
 										<h2><strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
 									</header>

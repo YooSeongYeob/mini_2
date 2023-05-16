@@ -19,3 +19,34 @@
         <span><?php echo (isset($this->errMsg) ? $this->errMsg : "") ?></span>
     </div>
 //------------------
+
+로그인 O
+회원가입 O
+회원정보 수정페이지 (해야 함) 
+메인페이지 (해야 함)
+
+
+
+ <?php 
+        if(isset($this->arrError["id"])) { 
+            echo $this->arrError["id"];
+        }
+        ?>
+
+        <?php 
+        if(isset($this->arrError["pw"])) { 
+        echo $this->arrError["pw"];
+        }
+        ?>
+
+        <?php 
+        if(isset($this->arrError["pw Check"])) { 
+        echo $this->arrError["pw Check"];
+        }
+        ?>
+
+        <?php 
+        if(isset($this->arrError["name"])) { 
+        echo $this->arrError["name"];
+        }
+        ?>
