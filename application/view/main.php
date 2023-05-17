@@ -17,15 +17,12 @@
 	<body class="index is-preload">
 	<div id="page-wrapper">
 			
-			
-
-
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="main">YOObit</a></h1>
+					<h1 id="logo"><a href="">YOObit</a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="main">투자는 신중히 하세요</a></li>
+							<li class="current"><a href="#">MENU</a></li>
 							<li class="submenu">
 								<a href="#"></a>
 								<ul>
@@ -81,9 +78,7 @@
 							<ul class="buttons stacked">
 							</ul>
 						</footer>
-
 					</div>
-
 				</section>
 
 			<!-- Main -->

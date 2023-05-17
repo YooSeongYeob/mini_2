@@ -20,7 +20,7 @@
 		<input type="text" name="pw" id="pw">
 		<button type="submit">Login</button>
 	</form> -->
-
+<h1><a href="http://localhost/coin/main">YOObit</a></h1>
 <div class="container">
     <div class="screen">
       <div class="screen__content">

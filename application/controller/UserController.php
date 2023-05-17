@@ -50,6 +50,11 @@ class UserController extends Controller {
          $arrChkErr["id"] ="ID는 12글자 이하로 입력해주세요.";
       }
       // ID 영문숫자 체크 (한 번 해보세요)
+      $pattern = "/[&a-zA-Z0-9]/"; // 전화번호 아이디 패스워드 언어를 가리지 않고 정규식 표현 가능
+      if(preg_match($pattern, $arrPost["id"]) !==0 ) {
+         $arrChkErr["id"] = "ID는 영어 대문자, 영어 소문자, 숫자로만 입력해주세요.";
+         $arrPost["id"] = "";
+      }  
 
       // PW 글자 수 체크
       if(mb_strlen($arrPost["pw"]) < 8 || mb_strlen($arrPost["pw"]) > 20) {
@@ -68,6 +73,11 @@ class UserController extends Controller {
          $arrChkErr["name"] = "이름을 30글자 이하로 입력해주세요";
       }
       
+      // pw는 화면에 공란으로 표시하기 위해 빈 문자열로 재설정
+      $arrPost["pw"]= "";
+      $arrPost["pwChk"]= "";
+
+
       // 유효성 체크 에러일 경우
       if(!empty($arrChkErr)) {
          // 에러메시지 세팅
