@@ -97,13 +97,12 @@
 
 					<!-- One -->
 					
-						<section class="wrapper style2 container special-alt">
-						
-							<div class="row gtr-50">
-							
+						<section class="wrapper style2 container special-alt" class="binanceimg2">
+						<img class="binanceimg" src="/application/view/images/kind of binance coin .png"/>
+							<div id="gtr-50" class="row gtr-50" >
 								<div class="col-8 col-12-narrower">
 							
-									<img class="binanceimg" src="/application/view/images/kind of binance coin .png"/>
+									
 									<!-- <header>
 										<h2><strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
 									</header>

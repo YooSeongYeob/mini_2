@@ -37,12 +37,17 @@ ol, ul {
 	list-style: none;
 }
 
+.binanceimg2 {
+	position: absolute;
+}
 
 .binanceimg {
-        max-width: 1200px;
+		background-image: url("/application/view/images/kind of binance coin .png");
+        max-width: 100%;
         height: auto;
+		position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.binanceimg {
 		max-width: 100%;
 		height: auto;
