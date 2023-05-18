@@ -41,6 +41,16 @@ class UserController extends Controller {
       return "regist"._EXTENSION_PHP;
    }
 
+   // 수정
+   public function updateGet(){
+      return "update"._EXTENSION_PHP;
+   }
+
+   // 코인 실시간 현황 및 거래
+   public function traidingGet(){
+      return "traiding"._EXTENSION_PHP;
+   }
+
    public function registPost() {
       $arrPost = $_POST;   
       $arrChkErr = [];

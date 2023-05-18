@@ -27,7 +27,7 @@ class Controller {
         $this->model = $this->getModel($identityName);
 
         // 해당 controller의 메소드 호출
-        $view = $this->$action();
+        $view = $this->$action();  // 로그인 겟과 로그인 포스트가 실행되는 지점
         // var_dump("t2 ".$action); // TODO
         if(empty($view)) {
             echo "해당 컨트롤러에 메소드가 없습니다. :" .$action;

@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>YOOBit</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/application/view/assets/css/main.css" />
@@ -48,6 +44,7 @@
 								<li><a class="button primary" href="/user/login">로그인</a></li>
 								<li><a class="button primary" href="/user/regist">회원가입</a></li>
 								<li><a class="button primary" href="">ID/PW 찾기</a></li>
+								<li><a class="button primary" href="/user/update">회원정보 수정</a></li>
 							<?php } ?>
 						</ul>
 					</nav>
@@ -56,12 +53,7 @@
 			<!-- Banner -->
 				<section id="banner">
 
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
+
 					<div class="inner">
 
 						<header>
@@ -80,6 +72,7 @@
 						</footer>
 					</div>
 				</section>
+
 
 			<!-- Main -->
 				<article id="main">
@@ -236,7 +229,7 @@
 					</header>
 					<footer>
 						<ul class="buttons">
-							<li><a href="#" class="button primary">Coin Buy</a></li>
+							<li><a href="/traiding/main" class="button primary">Coin Buy</a></li>
 						</ul>
 					</footer>
 
