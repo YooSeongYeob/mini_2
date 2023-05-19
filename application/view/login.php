@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/application/view/assets/css/coinLogin.css">
-    <link rel="icon" href="/application/view/coinpavicon.png">
+    <link rel="icon" href="/application/view/assets/Favicon/coinpavicon.png">
+    <script src="/application/view/js/common.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -13,13 +14,12 @@
 <h3 style="color: red;"><?PHP echo isset($this->errMsg) ? $this->errMsg : ""; ?></h3>
 <form action="/user/login" method="post"> 
 
-<!-- <form action="/user/login" method="post">
-		<label for="id">ID</label>
+<!-- <form action="/user/login" method="post"> -->
+		<!-- <label for="id">ID</label>
 		<input type="text" name="id" id="id">
 		<label for="pw">PW</label>
 		<input type="text" name="pw" id="pw">
-		<button type="submit">Login</button>
-	</form> -->
+		<button type="submit">Login</button> -->
 <h1><a href="http://localhost/coin/main">YOObit</a></h1>
 <div class="container">
     <div class="screen">

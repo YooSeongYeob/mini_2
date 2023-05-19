@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/application/view/assets/css/regist.css">
+    <link rel="icon" href="/application/view/assets/Favicon/coinpavicon.png">
     <title>regist</title>
 </head>
 <body>
  <!-- 1. if로 작성 -->
 
-  <h1>회원 가입</h1>
+  <h1>join</h1>
   <h2><a href="http://localhost/coin/main">YOObit</a></h2>
     <br>
     <br>

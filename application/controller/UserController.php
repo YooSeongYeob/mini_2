@@ -40,11 +40,21 @@ class UserController extends Controller {
    public function registGet(){
       return "regist"._EXTENSION_PHP;
    }
-
-   // 수정
+//-------------------수정------------------------
+   // 
    public function updateGet(){
       return "update"._EXTENSION_PHP;
-   }
+   }// 화면 넘어와서 초기표시
+   // 
+   public function updatePost(){
+      $this->model->beginTransaction();
+      $result = $this->model->updateUser($_POST); // DB에서 유저정보 습득
+
+      $this->model->commit();
+      $this->model->close(); // DB 파기
+      return _BASE_REDIRECT."/coin/main";
+   } // 회원정보 수정페이지 와서 입력해서 수정 버튼 누를 때 포스트 동작
+//------------------------------------------------
 
    // 코인 실시간 현황 및 거래
    public function traidingGet(){
@@ -121,6 +131,22 @@ class UserController extends Controller {
 
       // 로그인 페이지로 이동
          return _BASE_REDIRECT."/user/login";
+
+///////////////////////////////////////////////////
+      // User Update
+      if (!$this->model->updateUser($arrPost)) {
+       // 예외 처리 롤백
+       $this->model->rollback();
+       echo "User Update ERROR";
+       exit();
       }
+
+      $this->model->commit(); // 정상 처리 커밋
+      // ***** transaction End
+
+         // 업데이트 후 리다이렉트할 페이지로 이동
+      return _BASE_REDIRECT . "/user/update";
    }
+}
+   
 ?>

@@ -1,10 +1,20 @@
 <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/application/view/assets/css/traiding.css">
+    <link rel="icon" href="/application/view/assets/Favicon/coinpavicon.png">
+    <title>User Information Update</title>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
         <style>
             table {border-collapse: collapse}
             td, th {padding:5px; width:120px}
         </style>
+        <h2><a href="http://localhost/coin/main">YOObit</a></h2>
+        <h1>Traiding</h1>
         <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
         <script>
             // 전역 변수 세팅
@@ -179,34 +189,29 @@
         <span id="USDKRW"></span>
         
         <!-- 거래소 시세 정보 -->
-        <table id="border=1">
+        <table>
             <tr>
-                <th></th>
-                <th>폴로닉스</th>
-                <th>코인원</th>
-                <th>빗썸</th>
-                <th>코빗</th>
+                
+                <th>Coin</th>
+                
             </tr>
             <tr>
                 <td>비트코인</td>
-                <td id="poloniex_BTC"></td>
-                <td id="coinone_BTC"></td>
+                
                 <td id="bithumb_BTC"></td>
-                <td id="korbit_BTC"></td>
+               
             </tr>
             <tr>
                 <td>이더리움</td>
-                <td id="poloniex_ETH"></td>
-                <td id="coinone_ETH"></td>
+           
                 <td id="bithumb_ETH"></td>
-                <td id="korbit_ETH"></td>
+               
             </tr>
             <tr>
                 <td>리플</td>
-                <td id="poloniex_XRP"></td>
-                <td id="coinone_XRP"></td>
+               
                 <td id="bithumb_XRP"></td>
-                <td id="korbit_XRP"></td>
+
             </tr>
             <tr>
                 <td>최근 갱신 시간</td>
@@ -219,19 +224,10 @@
         
         <!-- 알람 설정 -->
         <select id="targetTrade">
-            <option value="poloniex_BTC">폴로닉스 비트코인</option>
-            <option value="poloniex_ETH">폴로닉스 이더리움</option>
-            <option value="poloniex_XRP">폴로닉스 리플</option>
-            <option value="coinone_BTC">코인원 비트코인</option>
-            <option value="coinone_ETH">코인원 이더리움</option>
-            <option value="coinone_XRP">코인원 리플</option>
-            <option value="bithumb_BTC">빗썸 비트코인</option>
-            <option value="bithumb_ETH">빗썸 이더리움</option>
-            <option value="bithumb_XRP">빗썸 리플</option>
-            <option value="korbit_BTC">코빗 비트코인</option>
-            <option value="korbit_ETH">코빗 이더리움</option>
-            <option value="korbit_XRP">코빗 리플</option>
-        </select> 이
+            <option value="bithumb_BTC">비트코인</option>
+            <option value="bithumb_ETH">이더리움</option>
+            <option value="bithumb_XRP">리플</option>
+        </select> 
         <input id="targetAmount" type="text" value="3000000"> 원
         <select id="targetIf">
             <option value="1">이상</option>
@@ -241,5 +237,19 @@
         
         <!-- 알람 목록 -->
         <ul id="alert_list"></ul>
+        <br>
+        <div class="soo1">
+            <select class="CoinName" name="CoinName">
+            <option hidden="" disabled="disabled" selected="selected" value="">=====선택하세요=====</option>
+	        <option value="비트코인">비트코인</option>
+	        <option value="이더리움">이더리움</option>
+	        <option value="리플">리플</option>
+            </select>
+            <div class="KRW1">
+            <input>KRW</input>
+            <button><a href="#">매수</a></button>
+            <button><a href="#">매도</a></button>
+            </div>
+        </div>    
     </body>
 </html>

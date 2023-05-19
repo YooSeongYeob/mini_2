@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/application/view/assets/css/regist.css">
+    <link rel="icon" href="/application/view/assets/Favicon/coinpavicon.png">
     <title>User Information Update</title>
 </head>
 <body>
-  <h1>회원 정보 수정</h1>
+  <h1>Edit</h1>
   <h2><a href="http://localhost/coin/main">YOObit</a></h2>
   <br><br>
   
@@ -22,7 +23,6 @@
     <div class="textForm">
       <label for="id">ID</label>
       <input type="text" name="id" id="id" class="id" placeholder="여기에 입력하세요" required>
-      <button type="button" onclick="chkDuplicationId();" class="jjj">중복체크</button>
       <span id="errMsgId">
         <?php 
         if(isset($this->arrError["id"])) { 
@@ -73,7 +73,7 @@
     <br>
     
     <div class="textForm">
-      <button href="/update/main" type="submit" class="btn">회원 정보 수정</button>
+      <button href="/user/update" type="submit" class="btn">회원 정보 수정</button>
     </div>
   </form>
 

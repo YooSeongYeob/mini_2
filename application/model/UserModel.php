@@ -20,9 +20,9 @@ class UserModel extends Model {
             ":id" => $arrUserInfo["id"]
         ];
 
-        // PW 추가할 경우 // 동적 쿼리의 가장 기초 // 인서트 딜리트 다 해당
+        // PW 추가할 경우 // 
         if($pwFlg) {
-            $prepare[":pw"] = base64_encode($arrUserInfo["pw"]);
+            $prepare[":pw"] = $arrUserInfo["pw"];
         }    
 
         try {
@@ -39,23 +39,43 @@ class UserModel extends Model {
         return $result;
     }
 
-        // Insert User
-        public function insertUser($arrUserInfo) {
-        $sql = " INSERT INTO user_info(u_id, u_pw, u_name) VALUES(:u_id, :u_pw, :u_name) ";
+    // Insert User
+    public function insertUser($arrUserInfo) {
+    $sql = " INSERT INTO user_info(u_id, u_pw, u_name) VALUES(:u_id, :u_pw, :u_name) ";
 
+    $prepare = [
+    ":u_id" => $arrUserInfo["id"]
+    , ":u_pw" => $arrUserInfo["pw"]
+    , ":u_name" => $arrUserInfo["name"]
+        ];
+
+
+    try {
+        $stmt = $this->conn->prepare($sql);
+        $result = $stmt->execute($prepare);
+        return $result;
+        } catch (Exception $e) {
+        return false;
+        }
+    }
+
+    ////////////////////////////////////
+    // User Update
+    public function updateUser($arrUserInfo) {
+        $sql = " UPDATE user_info SET u_pw = :u_pw, u_name = :u_name WHERE u_id = :u_id ";
+    
         $prepare = [
-        ":u_id" => $arrUserInfo["id"]
-        , ":u_pw" => base64_encode($arrUserInfo["pw"])
-        , ":u_name" => $arrUserInfo["name"]
-            ];
-
-
+            ":u_id" => $arrUserInfo["id"]
+            , ":u_pw" => $arrUserInfo["pw"]
+            , ":u_name" => $arrUserInfo["name"]
+        ];
+    
         try {
             $stmt = $this->conn->prepare($sql);
             $result = $stmt->execute($prepare);
             return $result;
-            } catch (Exception $e) {
+        } catch (Exception $e) {
             return false;
-            }
+        }
     }
 } 

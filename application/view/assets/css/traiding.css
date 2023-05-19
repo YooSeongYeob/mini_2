@@ -1,0 +1,100 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+select, input[type="text"], input[type="button"] {
+    padding: 5px;
+    font-size: 14px;
+    text-align-last: center;
+}
+
+#targetTrade {
+    margin-right: 10px;
+}
+
+#targetAmount {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#targetIf {
+    margin-right: 10px;
+}
+
+#targetSetting {
+    background-color: #81ecec;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#alert_list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.soo1 {
+    margin-top: 20px;
+}
+
+.soo1 button {
+    padding: 10px 20px;
+    background-color: #81ecec;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.soo1 button a {
+    color: white;
+    text-decoration: none;
+}
+
+.soo1 button:hover {
+    background-color: #81ecec;
+}
+
+h2 {
+    text-decoration: none; 
+    background:#81ecec; 
+    display: inline-flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.KRW1 {
+    position: inherit;
+}

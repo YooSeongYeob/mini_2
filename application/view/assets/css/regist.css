@@ -12,12 +12,12 @@
   }
 
   h1{
-    background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+    background:#81ecec;
     color:azure;
   }
 
   h2 a{
-      background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+      background: #81ecec;
 			font-size: 18px;
       color: #fff;
       display: inline;
@@ -28,7 +28,7 @@
   }
 
   body {
-    background-image:#34495e;
+    background-image:#81ecec;
   }
   
 
@@ -124,7 +124,7 @@
     margin-bottom: 40px;
     width:80%;
     height:40px;
-    background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+    background:#81ecec;
     background-position: left;
     background-size: 200%;
     color:white;
